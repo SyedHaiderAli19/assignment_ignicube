@@ -58,10 +58,10 @@ class _ScreenBState extends State<ScreenB> {
                     borderRadius: BorderRadius.circular(100),
                   ),
                   child: TextButton(
-                    onPressed: ()async {
-                      context.push('/').whenComplete(() {
-                        if(context.mounted) {
-                          showDialog(
+                    onPressed: () async {
+                      context.go('/');
+                      WidgetsBinding.instance.addPostFrameCallback((_) {
+                        showDialog(
                           context: context,
                           builder: (context) => AlertDialog(
                             title: const Text('Congratulations!'),
@@ -76,7 +76,6 @@ class _ScreenBState extends State<ScreenB> {
                             ],
                           ),
                         );
-                        }
                       });
                     },
                     child: const Text('Done'),
