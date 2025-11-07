@@ -40,7 +40,7 @@ class _ScreenBState extends State<ScreenB> {
                 ),
                 RichText(text: _hashtags(hashtags)),
               ],
-              const SizedBox(height: 36),
+              const Spacer(),
               Center(
                 child: Container(
                   width: 200,
