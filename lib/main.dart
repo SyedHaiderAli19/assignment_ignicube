@@ -1,5 +1,6 @@
 import 'package:assignment_ignicube/screens/screen_a.dart';
 import 'package:assignment_ignicube/screens/screen_b.dart';
+import 'package:assignment_ignicube/screens/screen_c.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
             return ScreenB(params: params);
           },
         ),
+        GoRoute(path: '/c', builder: (context, state) => const ScreenC()),
       ],
     );
     return MaterialApp.router(routerConfig: routes);

@@ -32,7 +32,10 @@ class ScreenA extends StatelessWidget {
                     onPressed: () {
                       context.push('/b');
                     },
-                    child: const Text('Go to Screen B'),
+                    child: const Text(
+                      'Go to Screen B',
+                      style: TextStyle(color: Colors.white),
+                    ),
                   ),
                 ),
               ),
